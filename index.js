@@ -5,12 +5,12 @@ var messages = [];
 
 var port = process.env.PORT || 3000
 app.use(bodyParser.json());
-bodyParser.urlencoded({
+app.use(bodyParser.urlencoded({
   extended: true
-});
+}));
 
 app.post('/receive', (req, res) => {
-  var msg = req.Body;
+  var msg = req.body.Body;
   messages.push(msg);
   console.log(msg);
   console.log(req.body);
@@ -18,6 +18,7 @@ app.post('/receive', (req, res) => {
 });
 
 app.get('/fetchmsg', (req, res) => {
+  console.log(messages);
   var msg = messages[0];
   messages.splice(0,1);
   res.send({
