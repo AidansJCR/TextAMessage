@@ -12,6 +12,8 @@ bodyParser.urlencoded({
 app.post('/receive', (req, res) => {
   var msg = req.body.Body;
   messages.push(msg);
+  console.log(msg);
+  console.log(req.body);
   res.send('success');
 });
 
