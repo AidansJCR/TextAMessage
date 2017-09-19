@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/OhmGeek/TextAMessage#readme",
   "dependencies": {
+    "express": "^4.15.4",
     "expressjs": "^1.0.1"
   }
 }
