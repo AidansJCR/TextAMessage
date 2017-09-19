@@ -1,9 +1,10 @@
 var express = require('express');
+var bodyParser = require('body-parser');
 var app = express();
 var messages = [];
 
 var port = process.env.PORT || 3000
-app.use(express.bodyParser);
+app.use(bodyParser);
 app.use(bodyParser.urlencoded({
   extended: true
 }));
