@@ -1,0 +1,23 @@
+{
+  "name": "textamessage",
+  "version": "1.0.0",
+  "description": "Uses Twilio to receive people's messages and display them on a screen.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OhmGeek/TextAMessage.git"
+  },
+  "author": "Ryan Collins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OhmGeek/TextAMessage/issues"
+  },
+  "homepage": "https://github.com/OhmGeek/TextAMessage#readme",
+  "dependencies": {
+    "expressjs": "^1.0.1"
+  }
+}
