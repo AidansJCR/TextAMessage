@@ -4,11 +4,10 @@ var app = express();
 var messages = [];
 
 var port = process.env.PORT || 3000
-app.use(bodyParser);
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
 app.use(bodyParser.json());
+bodyParser.urlencoded({
+  extended: true
+});
 
 app.post('/receive', (req, res) => {
   var msg = req.body.Body;
