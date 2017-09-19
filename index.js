@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var messages = [];
 
+var port = process.env.PORT || 3000
 
 
 app.post('/receive', (req, res) => {
@@ -17,6 +18,6 @@ app.get('/fetchmsg', (req, res) => {
   })
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("App is running on port 3000");
 });
