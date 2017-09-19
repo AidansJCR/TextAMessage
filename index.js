@@ -18,7 +18,8 @@ app.post('/receive', (req, res) => {
 });
 
 app.get('/fetchmsg', (req, res) => {
-  var msg = messages.splice(0,1);
+  var msg = messages[0];
+  messages.splice(0,1);
   res.send({
     'message': msg
   })
