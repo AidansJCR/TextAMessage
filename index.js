@@ -1,9 +1,14 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+var path = require('path');
 var app = express();
 var messages = [];
 
+// control variables
 var port = process.env.PORT || 3000
+var currentDirectory = (process.env.PORT) ? process.cwd() : __dirname;
+app.use(express.static(path.join(currentDirectory, "client")));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
   extended: true
