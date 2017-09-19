@@ -10,7 +10,7 @@ bodyParser.urlencoded({
 });
 
 app.post('/receive', (req, res) => {
-  var msg = req.body.Body;
+  var msg = req.Body;
   messages.push(msg);
   console.log(msg);
   console.log(req.body);
