@@ -1,0 +1,24 @@
+body {
+  background-image: url('background.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+  overflow: hidden;
+}
+
+#message {
+  font-size: 16pt;
+  color: white;
+}
+.container {
+  width: 80%;
+  min-height: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0 auto !important;
+  background-color: #000000;
+  text-align: center;
+  vertical-align: middle;
+
+}
