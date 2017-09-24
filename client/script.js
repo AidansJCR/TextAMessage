@@ -10,8 +10,10 @@ $(document).ready(function() {
       console.log(resp);
 
       if(message) {
+        $('#message').fadeOut(); // fade out
         console.log("Try to set the inner text");
         $('#message').text(message); // get the message.
+        $('#message').fadeIn();
       }
     });
 
