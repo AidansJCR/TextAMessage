@@ -5,15 +5,11 @@ $(document).ready(function() {
     // GET the next message.
     $.getJSON(BASE_URL + '/fetchmsg', function(resp) {
       var message = resp.message;
-      console.log("Received:");
-      console.log(message);
-      console.log(resp);
 
+      // if we have a message, update the screen. Otherwise, don't.
       if(message) {
-        $('#message').fadeOut(); // fade out
         console.log("Try to set the inner text");
         $('#message').text(message); // get the message.
-        $('#message').fadeIn();
       }
     });
 
