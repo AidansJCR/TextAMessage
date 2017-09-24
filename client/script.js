@@ -11,7 +11,7 @@ $(document).ready(function() {
 
       if(message) {
         console.log("Try to set the inner text");
-        $('#message').innerText = message; // get the message.
+        $('#message').text(message); // get the message.
       }
     });
 
