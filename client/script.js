@@ -5,8 +5,12 @@ $(document).ready(function() {
     // GET the next message.
     $.getJSON(BASE_URL + '/fetchmsg', function(resp) {
       var message = resp.message;
+      console.log("Received:");
+      console.log(message);
+      console.log(resp);
 
       if(message) {
+        console.log("Try to set the inner text");
         $('#message').innerText = message; // get the message.
       }
     });
