@@ -4,18 +4,18 @@ $(document).ready(function() {
   var tryToUpdate = function() {
     // GET the next message.
     $.getJSON(BASE_URL + '/fetchmsg', function(resp) {
-      var message = resp.message;
+      var textMessage = resp.message;
 
       // if we have a message, update the screen. Otherwise, don't.
-      if(message) {
+      if(textMessage) {
         // create a new container:
         var container = $('<div></div>');
+        container.addClass('container')
         container.addClass('fadein')
-
         // create a message object.
         var message = $('<span></span>');
         message.addClass('message');
-        message.text(message);
+        message.text(textMessage);
 
         // create the author object
         // todo display last few digits of their number (or assign random names)
