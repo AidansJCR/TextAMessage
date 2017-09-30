@@ -21,7 +21,7 @@ $(document).ready(function() {
         // todo display last few digits of their number (or assign random names)
         var author = $('<span></span>');
         author.addClass('by');
-        author.text('Anonymous');
+        author.text(' - Anonymous');
 
         // add information to the container.
         container.append(message);
