@@ -24,8 +24,8 @@ $(document).ready(function() {
         author.text('Anonymous');
 
         // add information to the container.
-        container.append(message);
-        container.append(author);
+        container.append(message.html);
+        container.append(author.html);
 
         // add the new message to the page.
         $('#page-container').append(container);
