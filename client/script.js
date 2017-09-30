@@ -3,6 +3,7 @@ $(document).ready(function() {
 
   var tryToUpdate = function() {
     // GET the next message.
+    $('#message').addClass('fadeout')
     $.getJSON(BASE_URL + '/fetchmsg', function(resp) {
       var message = resp.message;
 
@@ -10,6 +11,8 @@ $(document).ready(function() {
       if(message) {
         console.log("Try to set the inner text");
         $('#message').text(message); // get the message.
+        $('message').removeClass('fadeout')
+        $('#message').addClass('fadein')
       }
     });
 
