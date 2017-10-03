@@ -21,6 +21,7 @@
     "body-parser": "^1.18.1",
     "express": "^4.15.4",
     "expressjs": "^1.0.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "socket.io": "^2.0.3"
   }
 }
